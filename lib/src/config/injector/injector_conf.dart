@@ -8,6 +8,7 @@ final getIt = GetIt.I;
 
 Future<void> initializeDependencies() async {
   PostsDependency.init();
+  CustomInputDependency.init();
 
   getIt.registerLazySingleton<Dio>(() => AppDio.instance());
 }

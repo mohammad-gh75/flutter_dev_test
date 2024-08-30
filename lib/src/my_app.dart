@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dev_test/src/core/theme/app_themes.dart';
 
-import 'features/posts/presentation/pages/post_list_page.dart';
+import 'core/theme/app_themes.dart';
+import 'features/custom_input/presentation/pages/custom_input_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
           themeMode: ThemeMode.light,
           theme: theme(),
           debugShowCheckedModeBanner: false,
-          home: const PostList(),
+          home: const CustomInput(),
         ),
       ),
     );
